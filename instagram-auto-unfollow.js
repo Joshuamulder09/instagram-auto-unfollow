@@ -1,12 +1,5 @@
-/* Jquery kütüphanesini çağır */
-var jq = document.createElement('script');
-jq.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js";
-document.getElementsByTagName('head')[0].appendChild(jq);
-/* give time for script to load, then type (or see below for non wait option) */
-jQuery.noConflict();
-/* Jquery kütüphanesini çağır - SON */
-
 /* Kullanıcı ve html bilgileri */
+var auto_unfollow_time = 3000;
 var url = window.location.href; /* URL alınıyor */
 var username = url.split("/")[3]; /* Kullanıcı adı url`dan otomatik çekiliyor */
 
@@ -59,7 +52,7 @@ if(i > $(modal_users_ul_li).length) {
 	clearInterval(counter_interval);
 	alert("Finished ! Total : " + $("#unfollowed_users_count").text() + " unfollowed users");
 }
-}, 3000);
+}, auto_unfollow_time);
 }
 
 function step1(){
