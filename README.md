@@ -1,9 +1,10 @@
 # instagram-auto-unfollow
 Instagram auto unfollow
 
-1. Go to your instagram account with url (ex : instagram.com/yourusername)
-2. For Mozilla : CTRL + SHIFT + K
-3. Paste this code :
+1. Download Firebug for FireFox : http://getfirebug.com/
+2. Go to your instagram account with url (ex : instagram.com/yourusername)
+3. Open Firebug
+4. Paste this code in console :
 
 /* Jquery kütüphanesini çağır */
 var jq = document.createElement('script');
@@ -13,6 +14,6 @@ document.getElementsByTagName('head')[0].appendChild(jq);
 jQuery.noConflict();
 /* Jquery kütüphanesini çağır - SON */
 
-4. Enter :)
-5. After that, paste instagram-auto-infollow.js codes
-6. Enter :)
+5. Enter :)
+6. After that, paste instagram-auto-infollow.js codes
+7. Enter :)
