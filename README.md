@@ -23,3 +23,7 @@ jQuery.noConflict();
 5. Enter :)
 6. After that, paste instagram-auto-infollow.js codes
 7. Enter :)
+
+# Changing time to unfollowing
+
+you can change the value of variable auto_unfollow_time, default is 3000 millisecond ( 3 sec )
