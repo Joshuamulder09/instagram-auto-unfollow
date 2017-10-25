@@ -4,7 +4,7 @@ Instagram auto unfollow
 1. Download Firebug for FireFox : http://getfirebug.com/
 2. Go to your instagram account with url (ex : instagram.com/yourusername)
 3. Open Firebug
-4. Paste "allow paste" -> double Enter, and this code in console :
+4. Paste "allow pasting" -> double Enter, and this code in console :
 ```jquery
 /* Jquery kütüphanesini çağır */
 
