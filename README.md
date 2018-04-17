@@ -6,7 +6,7 @@ Instagram auto unfollow
 3. Open Firebug
 4. Paste "allow pasting" -> double Enter, and this code in console :
 ```jquery
-/* Jquery kütüphanesini çağır */
+/* Jquery - Start */
 
 var jq = document.createElement('script');
 
@@ -14,11 +14,11 @@ jq.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js";
 
 document.getElementsByTagName('head')[0].appendChild(jq);
 
-/* Jquery yükleniyor */
+/* Jquery charge */
 
 jQuery.noConflict();
 
-/* Jquery kütüphanesini çağır - SON */
+/* Jquery END */
 ```
 5. Enter :)
 6. After that, paste instagram-auto-infollow.js codes
