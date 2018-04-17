@@ -1,21 +1,21 @@
-/* Kullanıcı ve html bilgileri */
+/* Informations client et html */
 var auto_unfollow_time = 3000;
-var url = window.location.href; /* URL alınıyor */
-var username = url.split("/")[3]; /* Kullanıcı adı url`dan otomatik çekiliyor */
+var url = window.location.href; /* charger URL */
+var username = url.split("/")[3]; /* charger url de utilisateur */
 
-var followers_button = "a[href='/"+username+"/followers/']"; /* Takip edenler butonu bilgisi */
-var followers_list_class = "._4gt3b"; /* Takip edenlerin listelendiği div`in class değeri */
-var followers_count_class = "._bkw5z"; /* Takip edenlerin sayısı class değeri */
-var followers_count = $(followers_button + " " + followers_count_class).text(); /* Takip edenlerin sayısı */
+var followers_button = "a[href='/"+username+"/followers/']"; /* boutton des Abonnes */
+var followers_list_class = "._4gt3b"; /* Class de div de boutton des Abonnes */
+var followers_count_class = "._bkw5z"; /* Class de nombre des Abonnes */
+var followers_count = $(followers_button + " " + followers_count_class).text(); /* nombre des Abonnes */
 
-var following_button = "a[href='/"+username+"/following/']"; /* Takip edilenler butonu bilgisi */
-var following_list_class = "._4gt3b"; /* Takip edilenlerin listelendiği div`in class değeri */
-var following_count_class = "._bkw5z"; /* Takip edilenlerin sayısı class değeri */
-var following_count = $(following_button + " " + following_count_class).text(); /* Takip edilenlerin sayısı */
+var following_button = "a[href='/"+username+"/following/']"; /* boutton des ABOS */
+var following_list_class = "._4gt3b"; /* Class de div de boutton des ABOS */
+var following_count_class = "._bkw5z"; /* Class de nombre des ABOS */
+var following_count = $(following_button + " " + following_count_class).text(); /* nombre des ABOS  */
 
-var following_modal_title_class = "._q44m8"; /* Takip edilenlerin açılı pencere title class değeri */
+var following_modal_title_class = "._q44m8"; /* Class de modal des ABOS */
 
-var modal_users_ul_li = followers_list_class + " ul:first-child li";  /* Açılan penceredeki 1 ci ul elementinin li`lerini seç */
+var modal_users_ul_li = followers_list_class + " ul:first-child li";  /* les LIs de premier UL */
 
 var followers_order_array = {};  /* İzleyen kullanıcıların arraydaki sırası */
 var followers_name_array = {};  /* İzleyen kullanıcıların arraydaki ismi */
